@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>
       YouTube.com Clone
     </title>
     <style>
+      p{
+        font-family:Roboto, Arial;
+      }
       .thumbnail{
         width:300px;
         display:block;       
@@ -13,10 +19,15 @@
         font-size:20px;
         margin-left:12px;
         display:block;
+
       }
+
       .marques-title{
-        width:300px; 
+        margin-top:10px;
+        font-size:14px;
+        font-weight:500;
       }
+
       .video-preview{
         width:300px;
         display:inline-block;
@@ -28,6 +39,14 @@
         width:300px;
         display:block;       
       }
+
+      .marques{
+        font-weight:300;
+      }
+
+      .marques-views{
+        font-weight:300;
+      }
   
       .mark-title{
         width:300px; 
@@ -36,7 +55,21 @@
         width:300px;
         display:inline-block;
       }
-
+      .channel1picture{
+        display:inline-block;
+        width:50px;
+        vertical-align:top;
+  
+      }
+      .video-info{
+        display:inline-block;
+        width:200px;
+      }
+      .profile-picture{
+        margin-top:10px;
+        width:40px;
+        border-radius:50px;
+      }
  
     </style>
   </head>
@@ -44,10 +77,16 @@
       <input class="textbox" type="textbox" placeholder="Search">
     
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-  
+    <div>
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    </div>
+    <div>
+      <div class="channel1picture">
+      <img class="profile-picture" src="Channel-pictures/channel-1.jpeg">
+      </div>
+    <div class="video-info">
     <p class="marques-title" >
-      <strong>Talking Tech and AI with Google CEO Sundar Pichai!</strong>
+      Talking Tech and AI with Google CEO Sundar Pichai!
     </p>
     <p class="marques">
       Marques Brownlee 
@@ -55,15 +94,22 @@
     <p class="marques-views">
       3.4M views &#183; 6 months ago
     </p>
+      </div>
+
+
+    </div>
+     
+  
+
     </div>
 
     <div class="mark-preview">
       <img class="markthumbnail" src="thumbnails/thumbnail-2.webp">
   
     <p class="mark-title" >
-      <strong>
+      
         Try Not To Laugh Challenge #9
-      </strong>
+      
     </p>
     <p class="mark">
       Markiplier 
